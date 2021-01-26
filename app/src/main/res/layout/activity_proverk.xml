@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scheme"
+    android:orientation="vertical"
+    tools:context=".PROVERKA">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="110dp"
+            android:padding="2dp"
+            android:orientation="vertical">
+            <com.chaos.view.PinView
+                android:id="@+id/firstPinView"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:cursorVisible="true"
+                android:inputType="number"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="28sp"
+                android:itemBackground="@android:color/white"
+                android:textStyle="bold"
+                app:cursorWidth="2dp"
+                app:hideLineWhenFilled="true"
+                app:itemCount="4"
+                app:lineColor="@android:color/holo_blue_bright"
+                app:itemHeight="50dp"
+                app:itemRadius="10dp"
+                app:itemSpacing="15dp"
+                app:itemWidth="70dp"
+                app:lineWidth="2dp"
+                app:viewType="rectangle" />
+        </LinearLayout>
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:text=""/>
+    <Button
+        android:id="@+id/but_CHECK"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textSize="24sp"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:background="@android:color/holo_red_dark"
+        android:text="Check"/>
+
+</LinearLayout>

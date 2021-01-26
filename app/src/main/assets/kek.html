@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+<title>Уравнивание химических реакций</title>
+            
+                            <script type="text/javascript" src="jquery.js"></script>
+                            <script type="text/javascript" src="common.js"></script>
+                            <script type="text/javascript" src="easychem.js"></script>
+                            <script type="text/javascript" src="modernizr.js"></script>
+                            <script type="text/javascript" src="easychem-ext.js"></script>
+                            
+                    <script type="text/javascript">
+	  ChemSys.curLang = "en";
+      ChemSys.addDict({ en: { 'Test Stand': "Тестовый стенд"}});
+	</script>
+         
+</head>
+<body class="lang-en">
+		
+<center>
+				<div id="warnings-box"></div>
+		<div class="dashboard">
+Введите уравнение
+</div>
+
+<form id="SrcForm">
+  <input id="Src" type="text" size="40" style="margin-top:10px"><br>
+  <input type="submit" value="Уравнять" style="margin-top:10px">
+</form>
+
+<div id="ErrBox" class="error-box" style="display:none">
+</div>
+
+<div id="Result" style="display: none;">
+  <h2>Результат</h2>
+  <div id="MainResult"></div>
+</div>
+</center>
+<script type="text/javascript">
+
+$(function(){
+  
+  // event handler for #SrcForm
+  $('#SrcForm').submit(function(){
+    work();
+    return false;
+  });
+  // event handler for #Src keyup or change
+  $('#Src').keyup(quickDemo).change(quickDemo);
+
+  function work() {
+    $('#Result,#ErrBox').hide();
+    $('#QuickDemo').empty();
+    var source = $('#Src').val();
+    var solver = new ChemEquation(source);
+    solver.solve();
+    var msg = solver.getMessage();
+    if (!solver.isOk()) {
+      // error detected
+      $('#ErrBox').html(msg).show();
+    } else {
+      $('#Result').show();
+      var dst = solver.getExpr();
+      ChemJQ.draw(dst, '#MainResult');
+
+      }
+  }
+});
+</script>
+    
+</div>
+
+	
+</body></html>

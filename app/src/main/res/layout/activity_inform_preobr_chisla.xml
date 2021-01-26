@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InformPreobrChisla">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Перевод из десятичной сс. в двоичную сс. \n Взято из сайта wikihow.com"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="Шаг 1. Начните с создания таблицы. Запишите значения числа 2 в той или иной степени, ведя запись справа налево. Начните с 20, дав ей значение '1'. Увеличивайте показатель степени на единицу для каждой степени. Продолжайте работу над списком, пока не получите число, которое находится очень близко к тому, с которым вы работаете. Допустим, мы работаем... снова с числом 156 (дес.), переводя его из десятичной в двоичную систему счисления."
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="270dp"
+                    android:src="@drawable/st1"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="Шаг 2. Вычислите самую большое значение степени, помещающееся в число, которое вы хотите перевести в двоичную систему. Какое наибольшее значение степени двойки поместится в 156? Число 128 (2 в седьмой степени) помещается, поэтому самый левый знак двоичной записи будет 1. Далее вам нужно вычесть 128 из 156, что будет равняться 28."
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="270dp"
+                        android:src="@drawable/st2"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="Шаг 3. Переходите к следующей степени двойки. Итак, теперь мы работаем с числом 28. Давайте посмотрим по нашему списку, какая следующая степень двойки может поместиться в число 28? 64 помещается в 28? Нет, значит следующий знак в двоичной записи (справа от первого) – 0. Продолжать нужно до тех пор, пока вы не найдете число, которое все же поместится в 28."
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="270dp"
+                        android:src="@drawable/st3"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="Шаг 4. Вычитайте каждое следующее помещающееся число, отмечайте его цифрой '1'. Итак, 16 помещается в 28, поэтому давайте запишем цифру 1 под ним и вычтем 16 из 28. Результат равен 12, а в это число помещается восьмерка. Соответственно, надо записать цифру 1 под 8, а затем вычесть 8 из 12, что будет равняться 4."
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="270dp"
+                        android:src="@drawable/st4"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="Шаг 5. Продолжайте вычитать, пока не дойдете до конца таблицы. Не забывайте отмечать цифрой '1' все те числа, которые помещаются в ваше новое число, и цифрой '0' все те, которые не помещаются."
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="270dp"
+                        android:src="@drawable/st5"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp"
+                        android:text="Запишите получившееся двоичное число. Это число будет точно таким же, какой будет последовательность нулей и единиц в нашей таблице, если читать ее слева направо. У вас должно было получиться 10011100. Это двоичный эквивалент десятичного числа 156. Или, если записывать с базовыми индексами: 15610 = 100111002."
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="270dp"
+                        android:src="@drawable/st6"/>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="!Повторяя этот метод, вы запомните степени двойки, что позволит вам пропустить первый шаг данного руководства."
+                />
+        </LinearLayout>
+
+</ScrollView>

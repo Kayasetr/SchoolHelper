@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.School.Helper">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/student"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/student"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".GEOGRAPHY"></activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PROVERKA"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".informCalc"
+            android:configChanges="orientation|screenSize"
+            android:label="Преобразователи чисел"
+            android:parentActivityName=".Informatics" />
+        <activity
+            android:name=".algebra"
+            android:configChanges="orientation|screenSize"
+            android:label="Математика"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Physics"
+            android:configChanges="orientation|screenSize"
+            android:label="Физика"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".informCompSostav"
+            android:configChanges="orientation|screenSize"
+            android:label="Состав ПК"
+            android:parentActivityName=".Informatics" />
+        <activity
+            android:name=".GeometryFigures3d"
+            android:parentActivityName=".GeometryActivity" />
+        <activity
+            android:name=".Geometryfigures2d"
+            android:parentActivityName=".GeometryActivity" />
+        <activity
+            android:name=".GeometrySqeq"
+            android:parentActivityName=".GeometryActivity" />
+        <activity
+            android:name=".AvnActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ChemTab"
+            android:parentActivityName=".Chemistry" />
+        <activity
+            android:name=".ChemReacEq"
+            android:parentActivityName=".Chemistry" />
+        <activity
+            android:name=".Chemistry"
+            android:configChanges="orientation|screenSize"
+            android:label="Химия"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Informatics"
+            android:configChanges="orientation|screenSize"
+            android:label="Информатика"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".GeometryActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="Геометрия"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".demonstrActivity"
+            android:label="Демонстрационные графики"
+            android:parentActivityName=".GeometryActivity" />
+        <activity
+            android:name=".secondary3Activity"
+            android:label="Нахожд. уравнения по корням" />
+        <activity
+            android:name=".secondaryActivity"
+            android:label="График квадратичной функции"
+            android:parentActivityName=".GeometryActivity" />
+        <activity
+            android:name=".FinMath"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".algebra" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChemSvoisKisl"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".Chemistry" />
+        <activity
+            android:name=".ChemSvoisOsnov"
+            android:configChanges="orientation|screenSize"
+            android:parentActivityName=".Chemistry" />
+        <activity android:name=".InformPreobrChisla" />
+    </application>
+
+</manifest>

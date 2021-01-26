@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GEOGRAPHY">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:text="Кумтор"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:text="Месторождение Кумтор расположено в Жети-Огузском районе, на сев.-зап. склоне Ак-Шыйракского горного узла в Иссык-Кульских сыртах, на высотах 3900—4150 м над уровнем моря. Месторождение находится в 270 км от ж.-д. станции Балыкчы. Первые сведения о месторождении были получены в 1978г, а в 1978-90г проводились геологопоисковые, изыскательские и разведочные работы. Золотое оруденение локализовано в глинистых (преимущественно углеродистых) сланцах и в их метамотически изменённых разностях. Подавляющая часть золота (80—95%) связана с пиритом. Рудоносная полоса протяжённостью 10 км, шири ной 200-500 м исследована удовлетворительно. Центральный участок, самый богатый по запасам золота, протяжённостью 1200 м , шириной 300-500 м , от дневной поверхности до глубины 250—400 м, детально разведан. Балансовые запасы детально разведанной части месторождения: золото — 316,6 т, серебро — 145,2 т, оксид вольфрама — 21,6 тыс. т, теллур — 707,2 т, сера — 3132 тыс. т. Указанные запасы находятся в верхней части месторождения, подлежащей открытой (карьерной) отработке. Кроме того, для подземной отработки подсчитаны 200 т запасов золота, а также определённые запасы серебра. Среднее содержание золота в руде - 1,93 г/т. Месторождение Кумтор входит в десятку крупнейших золоторудных месторождений мира, отрабатывается с 1999г."
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+                <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:src="@drawable/kumtor" />
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:text="Кадамжайский сурьмяной комбинат"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Расположенный в Баткенской области Кыргызстана знаменитый некогда Кадамжайский сурьмяной комбинат, занимавший второе после Испании место в мире по производству сурьмы, переживает сейчас не лучшие времена. Построенный еще в 1936 году, он исчерпал все сроки по эксплуатации своих мощностей и лидирует по изношенности оборудования. В последние годы оно простаивало из-за нехватки сырья и проблем с финансированием. В 2014 году комбинат выполнил план лишь на 7%, хотя выпускаемая продукция востребована в мире, и соответствует принятым мировым стандартам."
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+                <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:src="@drawable/kadamjai" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:text="Учкошкон"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Месторождение Учкошкон находится в Жети-Огузском районе Иссык-кульской области (Оловянное месторождение). Оруденение локализовано в основном на контакте осадочных пород с гранитами. Среднее содержание олова на месторождении — 0,54%, висмута 0,01%; подсчитанные запасы висмута - 949 т."
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:text="Сулюкта"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Сулюкта - один из старейших центров угледобычи в Средней Азии. Промышленная разработка угля началась в 1868 году. Этим временем датируется возникновение Сулюкты. Город расположен в северных отрогах Туркестанского хребта, на высоте 1380 м над уровнем моря, в 150 км западнее областного центра — города Баткен (по трассе Сулюкта — Лейлекский район, Согдийская область Республики Таджикистан — Баткен), в 950 км от республиканского центра — города Бишкек."
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+                <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:src="@drawable/sulyukta" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:text="Айдарканский ртутный комбинат"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="Маленький городок Айдаркан (в советское время Хайдаркан), в Кадамжайском районе Баткенской области находится в 10 км от узбекского анклава Сох. Бытует легенда, что горный кишлак Айдаркен Памиро-Алайской горной системы был назван в честь влюбленного бедняка Айдара или Хайдара, кровь которого пролилась от руки богача-бая — отца возлюбленной дехканина. Кровь Айдара просочилась на залежь золота, и оно окрасилось красным цветом, превратившись в киноварь, из которой, собственно, добывают ртуть. Чуть позже, название города стали переводить как «Богатый рудник»."
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+                <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:src="@drawable/aidarkan" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

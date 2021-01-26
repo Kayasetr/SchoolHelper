@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".informCompSostav">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="Итак, из чего же состоит наш обычный персональный компьютер (ПК), который мы используем дома или на работе."
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Рассмотрим его аппаратную часть («железо»):"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginLeft="15dp"
+            android:text="• Периферийные устройства\n\n• Системный блок"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Периферийные устройства"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Периферийные устройства ПК обеспечивают возможность обмена информацией между компьютером и пользователем. Без всех этих устройств, все возможности и вся мощь любого персонального компьютера бесполезны."
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:text="Системный блок"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Системный блок в компьютере является «главным». Если аккуратно открутить шурупы с его задней стенки, снять боковую панель и заглянуть внутрь, то лишь с виду его устройство покажется сложным. Сейчас я коротко опишу его устройство, а потом охарактеризую главные элементы максимально понятным языком."
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/CardView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:background="?selectableItemBackground"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textAlignment="center"
+                    android:text="Вид системного блока без боковой панели"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    />
+
+                <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    app:src="@drawable/sysblock" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="1. Корпус\n2. Блок питания\n3. Кулер центрального процессора\n4. Корпусный вентилятор\n5. Модули оперативной памяти\n6. Видеокарта\n7-8. PCI-устройства\n9-10. CD/DVD привод\n11. Жесткий диск\n12. Материнская плата"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
